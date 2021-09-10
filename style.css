@@ -1,0 +1,44 @@
+body{
+    font-family: Helvetica, sans-serif;
+}
+h1{
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1em auto ;
+}
+ol{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    margin: 5%;
+}
+ol li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px 0 0;
+}
+ol li:nth-child(even){
+    background-color: #bbb;
+}
+ol li:nth-child(odd){
+    background-color: #999;
+}
+span{
+    display: inline-block;
+    font-size: 1.5rem;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0.5em;
+    box-sizing: border-box;
+}
+li div{
+    background-color: royalblue;
+    height: 2rem;
+    padding: 0.5em;
+    box-sizing: border-box;
+    color: #fff;
+}
