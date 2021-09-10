@@ -4,21 +4,17 @@ for(let i=0;i<1000;i++){
     let roll = rolaDado()+rolaDado()
     frequencia[roll-2]+=1
 }
-console.log(frequencia)
 let maiorFrequencia=0
 for (let i=0; i<frequencia.length; i++){
     if(frequencia[i]>maiorFrequencia){
         maiorFrequencia=frequencia[i]
     }
 }
-console.log(maiorFrequencia)
 const frequenciaNormal=[]//armazena a frequência em porcentagem da maior frequência
 for(let i=0;i<frequencia.length;i++){
     let porcentagem=frequencia[i]*100/maiorFrequencia
-    console.log(porcentagem)
     frequenciaNormal.push(porcentagem+'%')
 }
-console.log(frequenciaNormal)
 for(let i=0;i<frequencia.length;i++){
     lista.appendChild(criarElemento(i+2,frequencia[i],frequenciaNormal[i]))
 }
